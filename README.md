@@ -12,37 +12,39 @@ Get your `api_id` and `api_hash` from [Telegram's Developer Page](https://my.tel
 
 1. **Clone the Repository**
 
-```git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git```
+```bash
+git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git
 
-```cd telegram-to-telegram-channel-mirror```
+cd telegram-to-telegram-channel-mirror
+```
 
 
 2. **Install Dependencies**
 
-```pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
 
 
 ## Configuration
 
-On startup, the script automatically generates or updates the config.json file, offering an option to modify existing settings or create new ones, including listing and selecting channel IDs you're part of for easy configuration.
+Upon launch, the script seamlessly creates or refreshes the `config.json` with your preferences. Manual editing is optional; to initiate the setup just run the script. Ensure you input the full numeric ID for both `source_channel_id` and `target_channel_id`, including the initial `-` for private channels or groups. Enter everything in quotes as strings.
+
+Example:
 
 ```json
 {
-  "api_id": "Your_API_ID",
-  "api_hash": "Your_API_Hash",
-  "source_channel_id": "Your_Source_Channel_ID",
-  "target_channel_id": "Your_Target_Channel_ID"
+  "api_id": "your_api_id",
+  "api_hash": "your_api_hash",
+  "source_channel_id": "-123456789",
+  "target_channel_id": "-987654321"
 }
 ```
-
-The source_channel_id and target_channel_id should include the entire numeric ID, even if it begins with a -, indicating a private channel or group.
 
 ## Running the Script
 
 ```python3 telegram_channel_mirror.py```
 
-
-The script will load your configuration, and if everything is set up correctly, it will start listening for new messages in your source channel and automatically forward them to your target channel.
 
 ## License
 
