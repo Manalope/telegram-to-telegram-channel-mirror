@@ -1,6 +1,6 @@
 # Telegram to Telegram Channel Mirror
 
-This Python script allows you to mirror messages from one Telegram channel to another automatically. It's designed to be simple and easy to use, leveraging the Telethon library to interact with the Telegram API.
+This Python script mirrors messages from one Telegram channel to another. It's designed to be simple and easy to use.
 
 
 ## Prerequisites
@@ -12,8 +12,8 @@ Get your `api_id` and `api_hash` from [Telegram's Developer Page](https://my.tel
 
 1. **Clone the Repository**
 
-`git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git`
-`cd telegram-to-telegram-channel-mirror`
+```git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git
+cd telegram-to-telegram-channel-mirror```
 
 
 2. **Install Dependencies**
