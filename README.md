@@ -22,12 +22,12 @@ cd telegram-to-telegram-channel-mirror
 2. **Install Dependencies**
 
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Configuration
 
-Upon launch, the script creates or refreshes the `config.json` with your preferences. Manual editing is optional; to initiate the setup just run the script. Ensure you input the full numeric ID for both `source_channel_id` and `target_channel_id`, including the initial `-` for private channels or groups. Enter everything in quotes as strings.
+Just run the script:  Upon launch, `config.json` is created or updated. Manual editing is OK. Private channels have a negative `-` sign in front of them.
 
 Example of `config.json`:
 
@@ -46,13 +46,14 @@ Example of `config.json`:
 python3 telegram_channel_mirror.py
 ```
 
-During the initial authentication process, a `telegram_channel_mirror.session` file will be generated allowing the script to connect to Telegram without needing to re-authenticate each time.
+During setup, a `telegram_channel_mirror.session` file is generated allowing subsequent connection without re-authentication.
+
 
 ## License
 
-This project is released under the [MIT License](https://opensource.org/license/mit/).
+Released under [MIT License](https://opensource.org/license/mit/).
 
 ## Acknowledgments
 
-- This project uses the [Telethon library](https://github.com/LonamiWebs/Telethon) to interact with the Telegram API. Thank you to that project.
+Uses [Telethon library](https://github.com/LonamiWebs/Telethon). Thank you to that project.
 
