@@ -25,7 +25,6 @@ cd telegram-to-telegram-channel-mirror
 pip install -r requirements.txt
 ```
 
-
 ## Configuration
 
 Upon launch, the script creates or refreshes the `config.json` with your preferences. Manual editing is optional; to initiate the setup just run the script. Ensure you input the full numeric ID for both `source_channel_id` and `target_channel_id`, including the initial `-` for private channels or groups. Enter everything in quotes as strings.
