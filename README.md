@@ -12,8 +12,9 @@ Get your `api_id` and `api_hash` from [Telegram's Developer Page](https://my.tel
 
 1. **Clone the Repository**
 
-```git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git
-cd telegram-to-telegram-channel-mirror```
+```git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git```
+
+```cd telegram-to-telegram-channel-mirror```
 
 
 2. **Install Dependencies**
