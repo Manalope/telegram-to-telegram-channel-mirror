@@ -43,7 +43,9 @@ Example:
 
 ## Running the Script
 
-```python3 telegram_channel_mirror.py```
+```bash
+python3 telegram_channel_mirror.py
+```
 
 
 ## License
