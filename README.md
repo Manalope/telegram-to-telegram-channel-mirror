@@ -5,15 +5,15 @@ This Python script allows you to mirror messages from one Telegram channel to an
 
 ## Prerequisites
 
-Prior to using this script, secure your API ID and API Hash from [Telegram's Developer Page](https://my.telegram.org/apps), essential for Telegram API interactions.
+Get your `api_id` and `api_hash` from [Telegram's Developer Page](https://my.telegram.org/apps).
 
 
 ## Installation
 
 1. **Clone the Repository**
 
-```git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git```
-```cd telegram-to-telegram-channel-mirror```
+`git clone https://github.com/manalope/telegram-to-telegram-channel-mirror.git`
+`cd telegram-to-telegram-channel-mirror`
 
 
 2. **Install Dependencies**
@@ -34,7 +34,7 @@ On startup, the script automatically generates or updates the config.json file, 
 }
 ```
 
-Each field holds the respective information as a string. The source_channel_id and target_channel_id should include the entire numeric ID, even if it begins with a -, indicating a private channel or group.
+The source_channel_id and target_channel_id should include the entire numeric ID, even if it begins with a -, indicating a private channel or group.
 
 ## Running the Script
 
