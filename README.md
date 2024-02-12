@@ -28,9 +28,9 @@ pip install -r requirements.txt
 
 ## Configuration
 
-Upon launch, the script seamlessly creates or refreshes the `config.json` with your preferences. Manual editing is optional; to initiate the setup just run the script. Ensure you input the full numeric ID for both `source_channel_id` and `target_channel_id`, including the initial `-` for private channels or groups. Enter everything in quotes as strings.
+Upon launch, the script creates or refreshes the `config.json` with your preferences. Manual editing is optional; to initiate the setup just run the script. Ensure you input the full numeric ID for both `source_channel_id` and `target_channel_id`, including the initial `-` for private channels or groups. Enter everything in quotes as strings.
 
-Example:
+Example of `config.json`:
 
 ```json
 {
@@ -47,6 +47,7 @@ Example:
 python3 telegram_channel_mirror.py
 ```
 
+During the initial authentication process, a `telegram_channel_mirror.session` file will be generated allowing the script to connect to Telegram without needing to re-authenticate each time.
 
 ## License
 
